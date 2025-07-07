@@ -11,3 +11,5 @@ data
 minio-data
 database-data
 docroot
+.env
+nginx.conf
