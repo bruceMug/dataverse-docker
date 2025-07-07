@@ -5,8 +5,8 @@ services:
       networks:
         - proxy_hostinger-network
       container_name: dataverse_postgres
-      ports:
-        - "5433:5432"
+      # ports:
+      #   - "5433:5432"
       image: postgres:10.13
       restart: unless-stopped
 
