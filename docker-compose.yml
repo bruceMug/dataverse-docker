@@ -61,7 +61,7 @@ services:
         - MINIO_ROOT_PASSWORD=love1234
         # Do NOT use MINIO_DOMAIN or MINIO_SERVER_URL with Traefik.
         # All Routing is done by Traefik, just tell minio where to redirect to.
-        - MINIO_BROWSER_REDIRECT_URL=http://dataverse.marc.org
+        - MINIO_BROWSER_REDIRECT_URL=http://dataverse.marconilab.org
       deploy:
         # labels:
         #   - traefik.enable=true
