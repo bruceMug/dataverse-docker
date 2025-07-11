@@ -27,7 +27,8 @@ if [ "$1" = 'solr' ]; then
     bin/solr start
     bin/solr create_core -c collection1 -d server/solr/collection1/conf
     if [ $HOSTNAME = "dataverse-solr-0" ]; then
-        curl 'http://localhost:8983/solr/collection1/replication?command=restore&location=/home/share'
+        # curl 'http://localhost:8983/solr/collection1/replication?command=restore&location=/home/share'
+        curl 'http://solr:8983/solr/collection1/replication?command=restore&location=/home/share'
     fi
 
     sleep infinity
